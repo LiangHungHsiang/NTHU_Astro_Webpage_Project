@@ -1,0 +1,411 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Apple LiGothic, Heiti TC, "微軟正黑體";
+}
+
+body, html {
+  background-color: #191919;
+  z-index: 100;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 715px;
+  z-index: -10;
+  background: url(http://i.imgur.com/hpqkjTU.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.row {
+  width: inherit;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: 0px;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
+  color: #eeeeee;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
+  color: #D8770C;
+}
+.hideUp nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
+  top: -50px;
+}
+
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #eeeeee;
+}
+.title h1 {
+  letter-spacing: 3px;
+  font-weight: 900;
+  display: inline-block;
+  padding: 0px 0px 5px 3px;
+  border-bottom: solid 2px grey;
+}
+
+#welcome_page.jumbotron {
+  border-radius: 0px;
+  height: 715px;
+  color: #eeeeee;
+  background-color: transparent;
+  text-align: center;
+}
+#welcome_page.jumbotron .container {
+  width: 100%;
+  position: absolute;
+  bottom: 33%;
+}
+#welcome_page.jumbotron .container .row {
+  margin-left: auto;
+  margin-right: auto;
+}
+#welcome_page.jumbotron i {
+  margin-top: 50px;
+  width: 100px;
+  height: 60px;
+  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.8);
+  border: solid 1px #eeeeee;
+  border-radius: 10px;
+}
+
+#recent_activity {
+  margin-top: -20px;
+  background-color: #eeeeee;
+}
+#recent_activity .col-sm-12.title {
+  color: #191919;
+}
+#recent_activity .pic {
+  padding: 100px;
+  background-position: center center;
+}
+#recent_activity .pic1 {
+  background-image: url(http://i.imgur.com/eGdiROV.jpg);
+  background-size: 135% auto;
+}
+#recent_activity .pic2 {
+  background-image: url(http://i.imgur.com/NUzQQfk.jpg);
+  background-size: 135% auto;
+}
+#recent_activity .pic3 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Solar_eclipse_1999_4_NR.jpg/1280px-Solar_eclipse_1999_4_NR.jpg);
+  background-size: 135% auto;
+}
+#recent_activity .text_panel h2, #recent_activity .text_panel h4, #recent_activity .text_panel p {
+  text-align: left;
+}
+#recent_activity .text_panel h4 {
+  color: #D8770C;
+}
+#recent_activity .text_panel p {
+  color: grey;
+  letter-spacing: 1px;
+}
+#recent_activity .btn.btn-default {
+  background-color: #eeeeee;
+  margin-bottom: 25px;
+}
+
+#about_us {
+  background-color: #040F2D;
+  padding-bottom: 25px;
+}
+#about_us .image {
+  height: 300px;
+  background-image: url(http://i.imgur.com/cIDHpqB.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#about_us .story p {
+  color: #eeeeee;
+  text-align: left;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+#about_us .intro {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+#about_us .intro .pic {
+  width: 80px;
+  height: 80px;
+  margin: auto auto;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#about_us .intro .pic1 {
+  background-image: url(http://i.imgur.com/dAz1JYc.png);
+}
+#about_us .intro .pic2 {
+  background-image: url(http://i.imgur.com/PsA5Kl6.png);
+}
+#about_us .intro .pic3 {
+  background-image: url(http://i.imgur.com/lFGskjp.png);
+}
+#about_us .intro .text {
+  padding: 5px;
+  color: #eeeeee;
+}
+#about_us .intro .text h4 {
+  color: #D8770C;
+  margin-bottom: 5px;
+}
+#about_us .intro .text p {
+  margin-bottom: 0px;
+}
+
+#schedule {
+  background-color: #eeeeee;
+  color: #191919;
+}
+#schedule .col-sm-12.title {
+  color: #191919;
+}
+#schedule .timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+#schedule .timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: grey;
+  left: 50%;
+  margin-left: -1.5px;
+}
+#schedule .timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+#schedule .timeline > li:before {
+  content: " ";
+  display: table;
+}
+#schedule .timeline > li:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+#schedule .timeline > li:before {
+  content: " ";
+  display: table;
+}
+#schedule .timeline > li:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+#schedule .timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+#schedule .timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+#schedule .timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+#schedule .timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+#schedule .timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+#schedule .timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+#schedule .timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+#schedule .timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+#schedule .timeline-badge.success {
+  background-color: #3f903f !important;
+}
+#schedule .timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+#schedule .timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+#schedule .timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+#schedule .timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+#schedule .timeline-body > p, #schedule .timeline-body > ul {
+  margin-bottom: 0;
+}
+#schedule .timeline-body > p + p {
+  margin-top: 5px;
+}
+@media (max-width: 767px) {
+  #schedule ul.timeline:before {
+    left: 40px;
+  }
+  #schedule ul.timeline > li > .timeline-panel {
+    width: calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+  #schedule ul.timeline > li > .timeline-badge {
+    left: 15px;
+    margin-left: 0;
+    top: 16px;
+  }
+  #schedule ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+  #schedule ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  #schedule ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+}
+
+#gallery {
+  padding-bottom: 50px;
+  background-color: #040F2D;
+}
+#gallery #myCarousel .nav {
+  background: #eee;
+}
+#gallery #myCarousel .nav .item {
+  width: 600px;
+  height: 400px;
+  background-image: url(http://i.imgur.com/ioJyFKY.jpg);
+}
+#gallery #myCarousel .nav a {
+  border-radius: 0px;
+}
+#gallery #myCarousel .nav a small {
+  display: block;
+}
+
+#foreword {
+  background-color: transparent;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#foreword .col-sm-12 {
+  height: 300px;
+}
+#foreword .col-sm-12 .text_panel {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+#foreword .col-sm-12 .text_panel h2 {
+  color: White;
+  text-align: center;
+}
+
+#copyright {
+  background-color: #191919;
+  background-size: cover;
+  padding: 50px 0px 20px 0px;
+  text-align: center;
+  color: grey;
+}
+#copyright .icon {
+  border-radius: 100%;
+  display: inline-block;
+  margin: 25px;
+  height: 50px;
+  width: 50px;
+  background-position: center center;
+  background-size: 120%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#copyright .icon:hover {
+  cursor: pointer;
+  background-size: 130%;
+}
+#copyright .icon.fb {
+  background-image: url(http://i.imgur.com/GmttaDI.png);
+}
+#copyright .icon.acuut {
+  background-image: url(http://i.imgur.com/Cn1XB6L.png);
+}
+#copyright .icon.email {
+  background-image: url(http://i.imgur.com/67XYGpi.png);
+}
+#copyright p {
+  margin: 0;
+}
