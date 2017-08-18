@@ -1,0 +1,231 @@
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='#welcome_page') 清華大學天文社
+    #myNavbar.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href="#recent_activity") 近期活動
+        li
+          a(href="#about_us") 關於我們
+        li
+          a(href="#schedule") 行事曆
+        li
+          a(href="#gallery") 星空藝廊
+        li
+          a.astrocamp 星空之子天文營
+        li
+          a(href="https://www.facebook.com/AstronomyClubUnion/") 全國大學天文社聯盟
+
+      // 未來新增：會員登入功能
+      //- ul.nav.navbar-nav.navbar-right
+      //-   li
+      //-     a(href='#')
+      //-       span.glyphicon.glyphicon-user
+      //-       |  註冊
+      //-   li
+      //-     a(href='#')
+      //-       span.glyphicon.glyphicon-log-in
+      //-       |  登入
+
+header#welcome_page.jumbotron
+  .container
+    .row
+      .col-md-12
+        h1(data-0="transform: translateY(-50px)" data-500="transform: translateY(50px)") 你，就是星空之子
+        h3 無懼於夜晚的漆黑，我們熱愛星空！
+      a(href='#recent_activity').arrow
+        i.fa.fa-caret-down.fa-4x
+
+
+section#recent_activity
+  .container
+    .row
+      .col-sm-12.title(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        h1 近期活動
+      .col-sm-4.activity_name(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .pic.pic1(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .text_panel(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+          h2 全國大學天文社聯合論壇
+          h4 2017.06.28-06.30
+          p 自從2015年開始舉辦的全國大學天文社聯合論壇，今年邁入第三屆，是大學天文社群的年度盛事。來自全台灣二十多個大學天文社的同學齊聚一堂，分享觀測經驗、天文知識，也在美麗的星空下，成了相知相惜的朋友。
+        .btn.btn-default
+          a(href='https://docs.google.com/forms/d/e/1FAIpQLSdsRB55tzePktg10gMeb_UsSnIt1wxCF9HJBhw6Mj0ys9f1uw/closedform') 報名參加
+      .col-sm-4.activity_name(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .pic.pic2(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .text_panel(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+          h2 星空之子天文營
+          h4 2017.07.21-07.26
+          p 清華大學星空之子天文營，走過了 21 個年頭，今年邁入 22 歲，從第一屆開始，一直是對全國的高中生招生，營隊在課程和活動設計上也隨著時間不斷的演進。<br>清大天文營與小隊員們相約在新竹的每年夏天，在營隊中，讓小隊員不只玩到活動、學到知識、也認識來自更多全台各地的人。除了與高中生們談天文以外，還希望帶給小隊員們一個完整的營隊活動，在這裡獲得歸屬感。
+        .btn.btn-default
+          a.astrocamp 官方網站
+        .btn.btn-default
+          a(href='https://docs.google.com/forms/d/e/1FAIpQLSdBbjcc9jDKIHR0zebN22G2jZuR5tkRjIBbDwlRhSj8JtkU9w/closedform') 成為隊輔
+      .col-sm-4.activity_name(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .pic.pic3(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .text_panel(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+          h2 美國全食觀測團
+          h4 2017.08.13-08.26
+          p 繼2017年寒假前往香港與香港大學天文學會交流後，今年暑假清華天文社再度出征海外，飛往美國觀測即將於2017.08.21發生的日全食。這次全食時間將持續2分40秒，天文社的成員將以社團精良的望遠鏡與觀測技術記錄下日全食每個瞬間的動態。
+        .btn.btn-default
+          a(href='https://docs.google.com/forms/d/e/1FAIpQLSdnuXnL3s1jKlCpYdmBUbMl1hDVfW7vaYYaMC9Oa2lh8qZd_Q/closedform') 報名參加
+
+section#about_us
+  .container
+    .row
+      .col-sm-12.title(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        h1 關於我們
+      .col-xs-12
+        .col-xs-4.intro(data-bottom-top="transform: translateX(-50px);opacity: 0" data-center="transform: translateX(0px);opacity: 1")
+          .pic.pic1
+          .text
+            h4 社窩位置
+            p 國立清華大學總校區
+            p 蒙民偉樓318室
+        .col-xs-4.intro(data-bottom-top="opacity: 0" data-center="opacity: 1")
+          .pic.pic2
+          .text
+            h4 現任社長
+            p 國立清華大學電機系19級
+            p 黃昱修
+        .col-xs-4.intro(data-bottom-top="transform: translateX(50px);opacity: 0" data-center="transform: translateX(0px);opacity: 1")
+          .pic.pic3
+          .text
+            h4 定期社課
+            p 每隔週三舉行
+            p 詳見行事曆
+      .col-sm-5.col-xs-12
+        .image(data-bottom-top="background-size: 150%" data-center="background-size: 100%")
+      .col-sm-7.col-xs-12.story(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        p 西元1969年7月20日，美國太空人阿姆斯壯、艾德林、柯林斯乘坐阿波羅11號順利登陸月球，為人類歷史劃下永恆的標誌，這股天文熱潮迅速在全球蔓延開來，所有小孩的夢想自此也多了一項；兩年後，幾個在新竹的大孩子，也為自己的夢想跨出了第一步。清大天文社，於西元1971年11月29日晚上7點，在清華大學物理館內舉行成立大會；在這之前，已有教授和學長們共同自製望遠鏡，分別為八吋牛頓式望遠鏡（德式鏡架）及十六吋蓋塞格林望遠鏡（叉式鏡架）。從研磨鏡片到鏡筒均自力完成，其中十六吋望遠鏡為當時全國最大。
+        p 走過近半個世紀的清大天文，目前擁有一個十坪左右的溫暖社窩，及三架主力的望遠鏡、兩部電腦，這些都是由學長姐努力爭取、辛苦累積的。近年來天文社發展著重於「天文推廣普及 & 天文教育服務」，此外業餘天文的觀測攝影也是一大課題。
+
+
+section#schedule
+  .container
+    .row
+      .col-sm-12.title(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        h1 行事曆
+    ul.timeline
+      li(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .timeline-badge.warning
+          i.glyphicon.glyphicon-credit-card
+        .timeline-panel
+          .timeline-heading
+            h4.timeline-title 2017.04.15
+          .timeline-body
+            p 天文社feat.自然保育社聯合社課
+
+      li.timeline-inverted(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .timeline-badge
+          i.glyphicon.glyphicon-check
+        .timeline-panel
+          .timeline-heading
+            h4.timeline-title 2017.04.29
+          .timeline-body
+            p 天文營二籌
+      li(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .timeline-badge.danger
+          i.glyphicon.glyphicon-credit-card
+        .timeline-panel
+          .timeline-heading
+            h4.timeline-title 2017.05.03
+          .timeline-body
+            p 演講-賴詩萍教授
+      li.timeline-inverted(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .timeline-badge
+          i.glyphicon.glyphicon-check
+        .timeline-panel
+          .timeline-heading
+            h4.timeline-title 2017.05.20
+          .timeline-body
+            p 天文營三籌
+      li(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .timeline-badge.info
+          i.glyphicon.glyphicon-floppy-disk
+        .timeline-panel
+          .timeline-heading
+            h4.timeline-title 2017.05.31
+          .timeline-body
+            p 期末社員大會（選社長、送舊）
+      li(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .timeline-badge.success
+          i.glyphicon.glyphicon-thumbs-up
+        .timeline-panel
+          .timeline-heading
+            h4.timeline-title 2017.06.28-06.30
+          .timeline-body
+            p 全國大學天文社聯合論壇
+      li.timeline-inverted(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .timeline-badge.warning
+          i.glyphicon.glyphicon-thumbs-up
+        .timeline-panel
+          .timeline-heading
+            h4.timeline-title 2017.07.21-07.26
+          .timeline-body
+            p 星空之子天文營
+      li(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .timeline-badge.danger
+          i.glyphicon.glyphicon-thumbs-up
+        .timeline-panel
+          .timeline-heading
+            h4.timeline-title 2017.08.13-08.26
+          .timeline-body
+            p 北美日全食
+
+
+section#gallery
+  .container
+    .row
+      .col-md-12.title(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        h1 星空藝廊
+  .container
+    #myCarousel.carousel.slide(data-ride='carousel')
+      // Wrapper for slides
+      .carousel-inner
+        .item.active
+          img(src='https://scontent-tpe1-1.xx.fbcdn.net/v/t31.0-8/19264410_1780965231920222_207063117064327945_o.jpg?oh=fa7d944c2f62eb4545c3c9dab14b9170&oe=5A02A17C')
+        .item
+          img(src='https://scontent-tpe1-1.xx.fbcdn.net/v/t31.0-8/16819452_1817559128508724_1705358222429451834_o.jpg?oh=c3d4cc56d5a0894563947ab6d79883d8&oe=59FB2C34')
+        .item
+          img(src='https://scontent-tpe1-1.xx.fbcdn.net/v/t31.0-8/16804431_1817539668510670_4511376288049890298_o.jpg?oh=ecaa8642f95a8afa32b12dac9e602325&oe=59C5C8CB')
+        .item
+          img(src='https://scontent-tpe1-1.xx.fbcdn.net/v/t31.0-8/16716259_1813946515536652_7639876427083542478_o.jpg?oh=4f3d7d93088d5a0662a0fd33cf70e2b2&oe=5A105819')
+      ul.nav.nav-pills.nav-justified
+        li.active(data-target='#myCarousel', data-slide-to='0')
+          a(href='#')
+            | 敦煌沙漠銀河
+            small 電機17 梁閎翔
+        li(data-target='#myCarousel', data-slide-to='1')
+          a(href='#')
+            | 塔塔加北天星軌
+            small 電機18 徐安廷
+        li(data-target='#myCarousel', data-slide-to='2')
+          a(href='#')
+            | 三角座星系
+            small 清華天文46th儀器幹部
+        li(data-target='#myCarousel', data-slide-to='3')
+          a(href='#')
+            | 巴納德環
+            small 電機17 梁閎翔
+    // End Carousel
+
+section#foreword
+  .container
+    .row
+      .col-sm-12(data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        .text_panel
+          h2 有多久，沒看星星了呢？ 
+
+footer#copyright
+  a(href='https://www.facebook.com/nthuastro/').icon.fb
+  a(href='https://www.facebook.com/AstronomyClubUnion/').icon.acuut
+  a(href='mailto:nthu.astro@gmail.com').icon.email
+  p Map-pin, Sofa and conference icons are designed by Freepik from Flaticon
+  p 1971-2017 Copyright © NTHU Astronomy Club. All rights reserved
+  p Designed by Liang Hung-Hsiang
+  p 本網頁由電機17梁閎翔設計
