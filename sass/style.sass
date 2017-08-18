@@ -1,0 +1,366 @@
+//顏色定義
+$color_blue: #040F2D
+$color_white: #eeeeee
+$color_black: #191919
+$color_yellow: #D8770C
+$color_purple: #601554
+
+//網頁背景圖
+$page_bg: url(http://i.imgur.com/hpqkjTU.jpg)
+
+*
+  position: relative
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  text-align: center
+  font-family: Apple LiGothic, Heiti TC, "微軟正黑體"
+  
+  // debug
+  // nav
+  //   display: none
+  // header
+  //   display: none
+  // section
+  //   display: none
+  // footer
+  //   display: none
+  // .debug
+  //   display: block
+  
+
+body, html
+  background-color: $color_black
+  z-index: 100
+
+body:before
+  content: ""
+  display: block
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 715px
+  z-index: -10
+  background: $page_bg no-repeat center center
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+.row
+  width: inherit
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+  background-color: rgba(0,0,0,0.5)
+  transition: 0.5s
+  top: 0px
+  a
+    color: $color_white
+    transition: 0.5s
+    &:hover
+      color: $color_yellow
+  .hideUp &
+    top: -50px
+      
+.title
+  padding-top: 40px
+  padding-bottom: 40px
+  text-align: center
+  color: $color_white
+  & h1
+    letter-spacing: 3px
+    font-weight: 900
+    display: inline-block
+    padding: 0px 0px 5px 3px
+    border-bottom: solid 2px grey
+#welcome_page.jumbotron
+  border-radius: 0px
+  height: 715px
+  // padding-top: 300px
+  // padding-bottom: 300px
+  color: $color_white
+  background-color: transparent
+  text-align: center
+  .container
+    width: 100%
+    position: absolute
+    bottom: 33%
+    .row
+      margin-left: auto
+      margin-right: auto
+  
+  i
+    margin-top: 50px
+    width: 100px
+    height: 60px
+    opacity: 0.6
+    color: rgba(255,255,255,0.8)
+    border: solid 1px $color_white
+    border-radius: 10px
+#recent_activity
+  margin-top: -20px
+  background-color: $color_white
+  .col-sm-12.title
+    color: $color_black
+  .pic
+    padding: 100px
+    background-position: center center
+  .pic1
+    background-image: url(http://i.imgur.com/eGdiROV.jpg)
+    background-size: 135% auto
+  .pic2
+    background-image: url(http://i.imgur.com/NUzQQfk.jpg)
+    background-size: 135% auto
+  .pic3
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Solar_eclipse_1999_4_NR.jpg/1280px-Solar_eclipse_1999_4_NR.jpg)
+    background-size: 135% auto
+  .text_panel
+    h2, h4, p
+      text-align: left
+    h4
+      color: $color_yellow
+    p
+      color: grey
+      letter-spacing: 1px
+  .btn.btn-default
+    background-color: $color_white
+    margin-bottom: 25px
+
+#about_us
+  background-color: $color_blue
+  padding-bottom: 25px
+  .image
+    height: 300px
+    background-image: url(http://i.imgur.com/cIDHpqB.jpg)
+    background-size: cover
+    background-position: center 
+  .story
+    p
+      color: $color_white
+      text-align: left
+      margin-bottom: 25px
+      letter-spacing: 1px
+  .intro
+    padding-top: 25px
+    padding-bottom: 25px
+    & .pic
+      width: 80px
+      height: 80px
+      margin: auto auto
+      background-size: 100% 100%
+      background-position: center center
+      background-repeat: no-repeat
+    & .pic1
+      background-image: url(http://i.imgur.com/dAz1JYc.png)
+    & .pic2
+      background-image: url(http://i.imgur.com/PsA5Kl6.png)
+    & .pic3
+      background-image: url(http://i.imgur.com/lFGskjp.png)
+
+    & .text
+      padding: 5px
+      color: $color_white
+      h4
+        color: $color_yellow
+        margin-bottom: 5px
+      p
+        margin-bottom: 0px
+
+#schedule
+  background-color: $color_white
+  color: $color_black
+  .col-sm-12.title
+    color: $color_black
+  .timeline
+    list-style: none
+    padding: 20px 0 20px
+    position: relative
+    &:before
+      top: 0
+      bottom: 0
+      position: absolute
+      content: " "
+      width: 3px
+      background-color: grey//#eeeeee
+      left: 50%
+      margin-left: -1.5px
+    > li
+      margin-bottom: 20px
+      position: relative
+      &:before
+        content: " "
+        display: table
+      &:after
+        content: " "
+        display: table
+        clear: both
+      &:before
+        content: " "
+        display: table
+      &:after
+        content: " "
+        display: table
+        clear: both
+      >
+        .timeline-panel
+          width: 46%
+          float: left
+          border: 1px solid #d4d4d4
+          border-radius: 2px
+          padding: 20px
+          position: relative
+          -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5) //0.175
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5)//0.175
+          &:before
+            position: absolute
+            top: 26px
+            right: -15px
+            display: inline-block
+            border-top: 15px solid transparent
+            border-left: 15px solid #ccc
+            border-right: 0 solid #ccc
+            border-bottom: 15px solid transparent
+            content: " "
+          &:after
+            position: absolute
+            top: 27px
+            right: -14px
+            display: inline-block
+            border-top: 14px solid transparent
+            border-left: 14px solid #fff
+            border-right: 0 solid #fff
+            border-bottom: 14px solid transparent
+            content: " "
+        .timeline-badge
+          color: #fff
+          width: 50px
+          height: 50px
+          line-height: 50px
+          font-size: 1.4em
+          text-align: center
+          position: absolute
+          top: 16px
+          left: 50%
+          margin-left: -25px
+          background-color: #999999
+          z-index: 100
+          border-top-right-radius: 50%
+          border-top-left-radius: 50%
+          border-bottom-right-radius: 50%
+          border-bottom-left-radius: 50%
+      &.timeline-inverted > .timeline-panel
+        float: right
+        &:before
+          border-left-width: 0
+          border-right-width: 15px
+          left: -15px
+          right: auto
+        &:after
+          border-left-width: 0
+          border-right-width: 14px
+          left: -14px
+          right: auto
+
+  .timeline-badge
+    &.primary
+      background-color: #2e6da4 !important
+    &.success
+      background-color: #3f903f !important
+    &.warning
+      background-color: #f0ad4e !important
+    &.danger
+      background-color: #d9534f !important
+    &.info
+      background-color: #5bc0de !important
+
+  .timeline-title
+    margin-top: 0
+    color: inherit
+
+  .timeline-body >
+    p, ul
+      margin-bottom: 0
+    p + p
+      margin-top: 5px
+
+  @media (max-width: 767px)
+    ul.timeline
+      &:before
+        left: 40px
+      > li >
+        .timeline-panel
+          width: calc(100% - 90px)
+          width: -moz-calc(100% - 90px)
+          width: -webkit-calc(100% - 90px)
+        .timeline-badge
+          left: 15px
+          margin-left: 0
+          top: 16px
+        .timeline-panel
+          float: right
+          &:before
+            border-left-width: 0
+            border-right-width: 15px
+            left: -15px
+            right: auto
+          &:after
+            border-left-width: 0
+            border-right-width: 14px
+            left: -14px
+            right: auto
+#gallery
+  padding-bottom: 50px
+  background-color: $color_blue
+  #myCarousel .nav
+    background: #eee
+    .item
+      width: 600px
+      height: 400px
+      background-image: url(http://i.imgur.com/ioJyFKY.jpg)
+
+    a
+      border-radius: 0px
+      small
+        display: block
+#foreword
+  background-color: transparent
+  padding-top: 50px
+  padding-bottom: 50px
+  .col-sm-12
+    height: 300px
+    .text_panel
+      top: 50%
+      transform: translateY(-50%)
+      h2
+        color: White
+        text-align: center
+
+#copyright 
+  background-color: $color_black
+  background-size: cover
+  padding: 50px 0px 20px 0px
+  text-align: center
+  color: grey
+  
+  .icon
+    border-radius: 100%
+    display: inline-block
+    margin: 25px
+    height: 50px
+    width: 50px
+    background-position: center center
+    background-size: 120%
+    transition: 0.5s
+    &:hover
+      cursor: pointer
+      background-size: 130%
+  .icon.fb
+    background-image: url(http://i.imgur.com/GmttaDI.png)
+  .icon.acuut
+    background-image: url(http://i.imgur.com/Cn1XB6L.png)
+  .icon.email
+    background-image: url(http://i.imgur.com/67XYGpi.png)
+  p
+    margin: 0
+    
